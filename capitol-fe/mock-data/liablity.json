@@ -1,0 +1,41 @@
+{
+    "policyHolder": {
+      "personalDetails": {
+        "name" : "Max Mustermann",
+         "drivingLicenseNumber": "B123456789DE",
+         "email": "max.mustermann@icloud.com"
+      }
+    },
+  
+    "vehicleDetails": {
+      "make": "Volkswagen",
+      "model": "Golf VIII",
+      "year": 2022,
+      "vin": "WVWZZZAUZNW123456",
+      "mileage": 18500
+    },
+  
+    "insurancePolicy": {
+      "policyNumber": "VK-5678901234",
+      "insuranceType": "Vollkasko", 
+      "insuranceamt" : 400,
+      "validFrom": "2023-01-01",
+      "validUntil": "2024-02-01"
+    },
+  
+    "claimDetails": {
+      "incidentDate": "2023-11-15T08:30:00+01:00",
+      "reportDate": "2023-11-15T09:15:00+01:00",
+      "description": "Collision with deer while driving on highway A100",
+      "claimType": "Animal Collision", 
+      "estimatedRepairCost": 4200.00 
+    },
+  
+    "supportingDocuments": {
+      "policeReportNumber": "POL-BE-123456/2023",
+      "accidentReportAvailable": true
+    }
+  }
+ 
+
+  
