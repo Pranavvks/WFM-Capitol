@@ -3,7 +3,7 @@ from flask import jsonify
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from database.supabase_client import supabase
+from api.supabase_client import supabase
 from app import app
 from utils import (
     calculate_construction_year_diff,
@@ -87,7 +87,7 @@ def get_all_applications():
         return jsonify({'error': str(e)}), 500
 
 
-    """Generate a descriptive narrative of the accident based on claim type."""
+  
     descriptions = {
         'collision': 'Vehicle collision occurred resulting in damage to the insured vehicle. Incident requires assessment of damage and liability.',
         'theft': 'Vehicle was reported stolen. Case requires police report and investigation of circumstances.',
@@ -97,7 +97,7 @@ def get_all_applications():
     }
     return descriptions.get(claim_type, 'Claim requires investigation and assessment of damages.')
 
-    """Returns detailed information about a specific claim."""
+ 
     
     try:
         # Get claim details
@@ -176,7 +176,7 @@ def get_application_by_id(application_id):
         return jsonify({'error': str(e)}), 500
 
 
-    """Generate a descriptive narrative of the accident based on claim type."""
+
     descriptions = {
         'collision': 'Vehicle collision occurred resulting in damage to the insured vehicle. Incident requires assessment of damage and liability.',
         'theft': 'Vehicle was reported stolen. Case requires police report and investigation of circumstances.',
@@ -187,19 +187,18 @@ def get_application_by_id(application_id):
     return descriptions.get(claim_type, 'Claim requires investigation and assessment of damages.')
 
 
-    """Returns detailed information about a specific claim."""
     
     try:
-        # Get claim details
+        
         claim = supabase.table('claims').select('*').eq('claim_id', claim_id).single().execute()
         
         if not claim.data:
             return jsonify({'error': 'Claim not found'}), 404
             
-        # Get insurance details
+     
         insurance = supabase.table('insurances').select('*').eq('insurance_id', claim.data['insurance_id']).single().execute()
         
-        # Get application details for additional context
+        
         application = supabase.table('applications').select('first_name,last_name').eq('application_id', claim.data['application_id']).single().execute()
         
         result = {
