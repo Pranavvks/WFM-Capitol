@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { APIInsuranceRecord, fetchInsuranceApplications, transformApiData } from '@/utils/insurance-utils'
 
-export const columns: ColumnDef<InsuranceRecord>[] = [
+const columns: ColumnDef<InsuranceRecord>[] = [
   {
     accessorKey: "id",
     header: "ID",

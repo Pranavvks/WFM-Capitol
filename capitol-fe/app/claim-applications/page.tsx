@@ -30,7 +30,7 @@ const fetchClaims = async (): Promise<ClaimRecord[]> => {
   return data
 }
 
-export const columns: ColumnDef<ClaimRecord>[] = [
+const columns: ColumnDef<ClaimRecord>[] = [
   {
     accessorKey: "claim_id",
     header: "ID",

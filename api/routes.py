@@ -3,7 +3,7 @@ from flask import jsonify
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from api.supabase_client import supabase
+from supa_base_client import supabase
 from app import app
 from utils import (
     calculate_construction_year_diff,
