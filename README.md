@@ -99,7 +99,7 @@ The application uses Supabase for authentication. Email authentication is enable
 
 ### Frontend Development
 - The frontend is built with Next.js 14 and uses TypeScript
-- UI components are built using Radix UI and styled with Tailwind CSS
+- UI components are built using shadcn/ui and styled with Tailwind CSS
 - State management is handled with React Query
 
 ### Backend Development
