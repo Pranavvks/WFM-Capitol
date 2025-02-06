@@ -127,7 +127,7 @@ The application uses Supabase for authentication. Email authentication is enable
 
 The application uses a PostgreSQL database with the following structure:
 
-![Database Schema](./docs/db-schema.png)
+![Database Schema](./Capitol-Insurance-Database-Schema.png)
 
 ### Table Schemas
 
