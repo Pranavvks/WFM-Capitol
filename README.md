@@ -10,6 +10,24 @@ This is a full-stack application for managing insurance claims and applications.
 - Includes authentication flows and insurance management features
 - We have different views to browse all insurance applications, view application details, and manage claim applications.
 
+### Screenshots Frontend Application:
+
+![Authentication View](screenshots-fe/Capitol-auth.png)
+*Authentication interface for secure user access*
+
+![Insurance Management](screenshots-fe/capitol-insurance-management.png)
+*Main insurance management dashboard*
+
+![Insurance Application View](screenshots-fe/capitol-insurance_view.png)
+*Detailed insurance application review interface*
+
+![Claims Application View](screenshots-fe/capitol-claim-application-view.png)
+*Claims application management interface*
+
+![Liability Management](screenshots-fe/capitol-liablity-management.png)
+*Liability claims management dashboard*
+
+
 ### Backend API (`/api`)
 - Python Flask API
 - Handles business logic and data processing

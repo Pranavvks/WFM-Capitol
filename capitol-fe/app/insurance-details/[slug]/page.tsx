@@ -102,8 +102,10 @@ export default function DocumentReview() {
                       <Shield className="h-4 w-4 text-purple-400" />
                       Vehicle Risk Score
                     </div>
-                    <div className={`px-3 py-1.5 rounded-full text-sm font-medium ${getRiskScoreColor(vehicle_risk_assessment.risk_score)}`}>
-                      {vehicle_risk_assessment.risk_score ? vehicle_risk_assessment.risk_score.toFixed(2) : 'N/A'}/10
+                    <div className="inline-block">
+                      <div className={`px-3 py-1.5 rounded-full text-sm font-medium ${getRiskScoreColor(vehicle_risk_assessment.risk_score)}`}>
+                        {vehicle_risk_assessment.risk_score ? Math.round(vehicle_risk_assessment.risk_score) : 'N/A'}/10
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -153,8 +155,10 @@ export default function DocumentReview() {
                     Driver Risk Score
                   </div>
                   <div className="flex items-center justify-between">
-                    <div className={`px-3 py-1.5 rounded-full text-sm font-medium ${getRiskScoreColor(driver_risk_assessment.risk_score)}`}>
-                      {driver_risk_assessment.risk_score ? driver_risk_assessment.risk_score.toFixed(2) : 'N/A'}/10
+                    <div className="inline-block">
+                      <div className={`px-3 py-1.5 rounded-full text-sm font-medium ${getRiskScoreColor(driver_risk_assessment.risk_score)}`}>
+                        {driver_risk_assessment.risk_score ? Math.round(driver_risk_assessment.risk_score) : 'N/A'}/10
+                      </div>
                     </div>
                   </div>
                 </div>
