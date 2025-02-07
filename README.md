@@ -113,17 +113,17 @@ The application uses Supabase for authentication. Email authentication is enable
 2. Navigate to Authentication > Providers
 3. Enable and configure desired authentication providers
 
-## Development Guidelines
+## Tech Stack
 
 ### Frontend Development
-- The frontend is built with Next.js 14 and uses TypeScript
-- UI components are built using Radix UI and styled with Tailwind CSS
+- The frontend is built with Next.js 15 using TypeScript
+- UI components are built using shadcn/ui and styled with Tailwind CSS
 - State management is handled with React Query
 
 ### Backend Development
 - The backend is built with Python Flask
 - Uses Supabase Python client for database operations
-- Follow PEP 8 style guide for Python code
+
 
 ## Project Structure
 
